@@ -8,4 +8,5 @@ module.exports = Object.freeze({
   MONGODB_DATABASE: process.env.MONGODB_DATABASE,
   REDIS_EXPIRES: process.env.REDIS_EXPIRES,
   REDIS_URL: process.env.REDIS_URL,
+  REDIS_PORT: process.env.REDIS_PORT,
 });
