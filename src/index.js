@@ -39,7 +39,7 @@ const options = {
     },
   },
   route: {
-    url: '/swagger',
+    url: '/api/docs',
     docs: '/api-docs.json',
   },
   basedir: __dirname, // app absolute path
