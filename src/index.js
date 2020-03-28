@@ -20,7 +20,7 @@ const mongooseConnection = mongo();
 const options = {
   swaggerDefinition: {
     info: {
-      title: 'Boilerplate API',
+      title: 'Challenge St Marche',
     },
     host: 'localhost:3000',
     basePath: '/api',
