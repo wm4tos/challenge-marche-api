@@ -6,7 +6,7 @@ module.exports.passwordsAreEquals = (
 ) => compare(userPassword, reqPassword);
 
 module.exports.formatUser = ({
-  _id, name, email, isAdmin,
+  _id, password, ...rest
 }) => ({
-  id: _id, name, email, isAdmin,
+  id: _id, ...rest,
 });

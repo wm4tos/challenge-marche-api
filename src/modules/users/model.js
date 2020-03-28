@@ -14,10 +14,6 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  isAdmin: {
-    type: String,
-    default: false,
-  },
 });
 
 module.exports.userSchema = userSchema;
