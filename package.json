@@ -14,6 +14,7 @@
     "bluebird": "^3.7.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "express-swagger-generator": "^1.1.15",
