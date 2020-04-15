@@ -27,7 +27,6 @@ module.exports = () => {
    * @property {string} name.required
    * @property {string} email.required
    * @property {string} password.required
-   * @property {boolean} admin
    */
 
   /**
