@@ -1,11 +1,10 @@
-const { bcrypt: { generateHash } } = require('../helpers');
+const { generateHash } = require('../helpers/bcrypt');
 
 module.exports = [
   {
     name: 'Wesley Matos',
     email: 'wrickee@gmail.com',
     password: generateHash('wes123'),
-    isAdmin: true,
   },
   {
     name: 'Fake user 1',
