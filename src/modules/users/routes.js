@@ -1,9 +1,8 @@
-const { Router } = require('express');
 const { auth: authRoute, create } = require('./controller');
 const contracts = require('./contract');
 const validator = require('../../middlewares/validator');
 
-module.exports = () => {
+module.exports = (Router) => {
   const router = Router();
 
   /**
