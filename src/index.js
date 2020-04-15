@@ -8,8 +8,7 @@ const routes = require('./routes');
 const { PORT } = require('./config');
 const mongo = require('./mongo');
 const { errorHandler } = require('./middlewares');
-const errorHelper = require('./helpers/error');
-const seederHelper = require('./helpers/seed');
+const { error: errorHelper, seed: seederHelper } = require('./helpers');
 
 const { Router } = express;
 const app = express();

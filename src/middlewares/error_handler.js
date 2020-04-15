@@ -1,5 +1,5 @@
 const httpStatus = require('http-status-codes');
-const errorHelper = require('../helpers/error');
+const { error: errorHelper } = require('../helpers');
 
 module.exports = (err, _, res) => {
   if (err.name in httpStatus) {

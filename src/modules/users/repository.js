@@ -1,5 +1,5 @@
 const User = require('./model');
-const { transformInJSON } = require('../../helpers/mongoose');
+const { mongoose: { transformInJSON } } = require('../../helpers');
 
 /**
  * @description Search user with his e-mail.
