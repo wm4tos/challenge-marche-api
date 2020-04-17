@@ -16,7 +16,10 @@ const getFileFromRedis = async id => JSON.parse(await client.getAsync(id));
 /**
  * @description Delete file from Redis.
  */
-const deleteFileFromRedis = client.del;
+const deleteFileFromRedis = key => client.del(key, (err, deleted) => {
+  if (err) throw err;
+  return deleted;
+});
 
 module.exports = {
   saveFileOnRedis,
