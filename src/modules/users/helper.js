@@ -6,7 +6,7 @@ module.exports.passwordsAreEquals = (
 ) => compare(userPassword, reqPassword);
 
 module.exports.formatUser = ({
-  _id, name, email,
+  _id, name, email, files,
 }) => ({
-  id: _id, name, email,
+  id: _id, name, email, profilePicture: files.find(x => x.isProfilePic && x.isDefaultProfilePic),
 });
