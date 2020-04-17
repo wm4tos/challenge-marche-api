@@ -1,6 +1,6 @@
 const { auth: authRoute, create } = require('./controller');
 const contracts = require('./contract');
-const validator = require('../../middlewares/validator');
+const { validator } = require('../../middlewares');
 
 module.exports = (Router) => {
   const router = Router();
@@ -26,10 +26,11 @@ module.exports = (Router) => {
    * @property {string} name.required
    * @property {string} email.required
    * @property {string} password.required
+   * @property {string} picture.required
    */
 
   /**
-   * @route POST /user/create
+   * @route POST /user/register
    * @group User - Operations about user
    * @param {User.model} user.body - Data of user
    * @returns {object} 200 - User created successfully
