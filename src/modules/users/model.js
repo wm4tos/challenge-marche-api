@@ -14,6 +14,34 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  files: [
+    {
+      name: {
+        type: String,
+        required: true,
+      },
+      path: {
+        type: String,
+        required: true,
+      },
+      size: {
+        type: Number,
+        required: true,
+      },
+      type: {
+        type: String,
+        required: true,
+      },
+      isProfilePic: {
+        type: Boolean,
+        default: false,
+      },
+      isDefaultProfilePic: {
+        type: Boolean,
+        default: false,
+      },
+    },
+  ],
 });
 
 module.exports.userSchema = userSchema;
