@@ -2,7 +2,7 @@ const { Router } = require('express');
 const loadRoutes = require('./helpers/load_routes');
 
 module.exports = (router) => {
-  const routes = loadRoutes(['users']);
+  const routes = loadRoutes(['users', 'files']);
 
   routes.forEach((route) => {
     const { endpoint, router: r } = route(Router);
